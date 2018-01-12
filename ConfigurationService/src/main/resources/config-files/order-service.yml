@@ -1,0 +1,4 @@
+spring:
+  rabbitmq:
+    password: order_m$g_pRd_123
+    username: OrderMessageProducer

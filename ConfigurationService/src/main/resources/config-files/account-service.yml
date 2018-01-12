@@ -1,0 +1,4 @@
+spring:
+  rabbitmq:
+    password: account_m$g_pRd_123
+    username: AccountMessageProducer

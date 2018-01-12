@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../AdminService/AdminService.iml" filepath="$PROJECT_DIR$/../AdminService/AdminService.iml" group="MicroservicesDemo" />
+      <module fileurl="file://$PROJECT_DIR$/../ConfigurationService/ConfigurationService.iml" filepath="$PROJECT_DIR$/../ConfigurationService/ConfigurationService.iml" group="MicroservicesDemo" />
+      <module fileurl="file://$PROJECT_DIR$/../GatewayService/GatewayService.iml" filepath="$PROJECT_DIR$/../GatewayService/GatewayService.iml" group="MicroservicesDemo" />
+      <module fileurl="file://$PROJECT_DIR$/../NotificationService/NotificationService.iml" filepath="$PROJECT_DIR$/../NotificationService/NotificationService.iml" group="MicroservicesDemo" />
+      <module fileurl="file://$PROJECT_DIR$/../OrderService/OrderService.iml" filepath="$PROJECT_DIR$/../OrderService/OrderService.iml" group="MicroservicesDemo" />
+      <module fileurl="file://$PROJECT_DIR$/../RegistryService/RegistryService.iml" filepath="$PROJECT_DIR$/../RegistryService/RegistryService.iml" group="MicroservicesDemo" />
+      <module fileurl="file://$PROJECT_DIR$/UserAccountService.iml" filepath="$PROJECT_DIR$/UserAccountService.iml" group="MicroservicesDemo" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,8 @@
+spring:
+  data:
+    cassandra:
+      keyspace-name: notification_service
+      port: 9042
+  rabbitmq:
+    password: notification_m$g_cSmr_123
+    username: NotificationMessageConsumer

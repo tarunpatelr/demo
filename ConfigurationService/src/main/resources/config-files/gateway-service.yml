@@ -1,0 +1,31 @@
+zuul:
+  ignoredServices: '*'
+  host:
+    connect-timeout-millis: 20000
+    socket-timeout-millis: 20000
+  routes:
+    account-service:
+        path: /account-service/**
+        serviceId: account-service
+        stripPrefix: true
+        sensitiveHeaders:
+    statistics-service:
+        path: /notification-service/**
+        serviceId: notification-service
+        stripPrefix: true
+        sensitiveHeaders:
+    notification-service:
+        path: /order-service/**
+        serviceId: order-service
+        stripPrefix: true
+        sensitiveHeaders:
+    portfolio-service:
+        path: /zp/**
+        url: http://localhost:9999/
+        stripPrefix: true
+        sensitiveHeaders:
+    finance-service:
+        path: /zfs/**
+        url: http://localhost:3000/
+        stripPrefix: true
+        sensitiveHeaders:

@@ -1,0 +1,53 @@
+version: '3.3'
+services:
+  config:
+    image: tarunpatelr/config-service:v1.0
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          memory: 200M
+    ports:
+      - 8888:8888
+    networks:
+      - webnet
+  registry:
+    image: tarunpatelr/registry-service:v1.0
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          memory: 200M
+    ports:
+      - 8989:8989
+    depends_on:
+      - config
+    networks:
+      - webnet
+  gateway:
+    image: tarunpatelr/gateway-service:v1.0
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          memory: 200M
+    ports:
+      - 4000:4000
+    depends_on:
+      - config
+      - registry
+    networks:
+      - webnet
+  visualizer:
+    image: dockersamples/visualizer:stable
+    ports:
+      - 8080:8080
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    deploy:
+      placement:
+        constraints: [node.role == manager]
+    networks:
+      - webnet
+networks:
+  webnet:

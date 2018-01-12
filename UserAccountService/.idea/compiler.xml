@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="AdminService" />
+        <module name="configuration-service" />
+        <module name="ConfigurationService" />
+        <module name="gateway-service" />
+        <module name="GatewayService" />
+        <module name="notification-service" />
+        <module name="NotificationService" />
+        <module name="order-service" />
+        <module name="OrderService" />
+        <module name="registry-service" />
+        <module name="RegistryService" />
+        <module name="UserAccountService" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="admin-service" target="1.8" />
+      <module name="AdminService" target="1.8" />
+      <module name="configuration-service" target="1.8" />
+      <module name="ConfigurationService" target="1.8" />
+      <module name="gateway-service" target="1.8" />
+      <module name="GatewayService" target="1.8" />
+      <module name="notification-service" target="1.6" />
+      <module name="NotificationService" target="1.6" />
+      <module name="order-service" target="1.8" />
+      <module name="OrderService" target="1.8" />
+      <module name="registry-service" target="1.8" />
+      <module name="RegistryService" target="1.8" />
+      <module name="UserAccountService" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

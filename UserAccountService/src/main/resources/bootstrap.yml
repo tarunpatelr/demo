@@ -1,0 +1,50 @@
+logging:
+  file: ${spring.application.name}.log
+  level:
+    ROOT: DEBUG
+spring:
+  application:
+    name: account-service
+  cloud:
+    config:
+      fail-fast: true
+      uri: http://localhost:8888
+
+endpoints:
+  autoconfig:
+    enabled: true
+    id: autoconfig
+    sensitive: false
+  beans:
+    enabled: true
+    id: beans
+    sensitive: false
+  configprops:
+    enabled: true
+    id: configprops
+    sensitive: false
+  dump:
+    enabled: true
+    id: dump
+    sensitive: false
+  env:
+    enabled: true
+    id: env
+    sensitive: false
+  health:
+    sensitive: false
+  mappings:
+    enabled: true
+    id: mappings
+    sensitive: false
+  metrics:
+    enabled: true
+    id: metrics
+    sensitive: false
+  trace:
+    enabled: true
+    id: trace
+    sensitive: false
+  shutdown:
+    enabled: true
+    sensitive: false

@@ -1,0 +1,11 @@
+logging:
+  file: ${spring.application.name}.log
+  level:
+    ROOT: DEBUG
+spring:
+  application:
+    name: notification-service
+  cloud:
+    config:
+      fail-fast: true
+      uri: http://localhost:8888

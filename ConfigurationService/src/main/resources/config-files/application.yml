@@ -1,0 +1,19 @@
+user:
+  account:
+    service:
+      baseUrl: http://account-service
+      exchange:
+        name: user.account.exchange
+      routingKey:
+        prefix: user.account.
+order:
+  service:
+    baseUrl: http://order-service
+    exchange:
+      name: order.exchange
+    routingKey:
+      prefix: order.
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8989/eureka/
